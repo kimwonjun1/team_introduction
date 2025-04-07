@@ -12,9 +12,6 @@ async function loadMember() {
     const data = docSnap.data();
     container.innerHTML = `
       <h2>${data.name}</h2>
-      <img src="${data.photo}" alt="${data.name}" />
-      <p>역할: ${data.role}</p>
-      <p>소개: ${data.description}</p>
       <a href="team_introduction.html">← 돌아가기</a>
     `;
   } else {
